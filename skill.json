@@ -1,0 +1,25 @@
+{
+  "name": "genpark-personal-agent-cardiorespiratory-vo2max-velocity-skill",
+  "version": "1.0.0",
+  "description": "Calculates VO2max via Uth heart rate ratio, Cooper 12-minute run formula, cardiorespiratory biological fitness age, and JAMA mortality hazard ratios.",
+  "tools": [
+    {
+      "name": "estimate_vo2max_from_heart_rate_ratio",
+      "description": "Calculates VO2max via Uth heart rate ratio, fitness biological age, and mortality hazard ratio.",
+      "parameters": {
+        "resting_hr_bpm": "float (default 58.0)",
+        "max_hr_bpm": "float (default 182.0)",
+        "age": "int (default 42)",
+        "sex": "string (default 'male')"
+      }
+    },
+    {
+      "name": "estimate_vo2max_from_cooper_run",
+      "description": "Calculates VO2max and aerobic velocity (vVO2max) from Cooper 12-minute run distance.",
+      "parameters": {
+        "twelve_minute_distance_meters": "float (default 2750.0)",
+        "bodyweight_kg": "float (default 75.0)"
+      }
+    }
+  ]
+}
